@@ -1,10 +1,4 @@
-const express = require('express')
-const app = express()
-const port = 3000
-
-app.get('/', (req, res) => res.send('Hello World!'))
-
-app.listen(process.env.PORT,process.env.IP, () => console.log(`Example app listening on port ${port}!`))/* var express = require('express'),
+var express = require('express'),
     app = express(),
     mongoose = require('mongoose'),
     passport = require("passport"),
@@ -85,4 +79,4 @@ function isLoggedIn(req,res,next) {
 
 app.listen(process.env.PORT, process.env.IP, function () {
   console.log('Example app listening on port 3000!');
-}); */
+}); 
