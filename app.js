@@ -10,6 +10,7 @@ var express = require('express'),
 mongoose.connect("mongodb://localhost/auth");
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
+// Hash Function
 app.use(require("express-session")({
     secret: "wah wah wah",
     resave: false,
